@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+/* Mundo "Hoja rayada": avisos en papel blanco sobre una hoja rayada de cuaderno
+   (la de todas las materias, no solo las de números), letra firme (Archivo),
+   birome azul y resaltadores por facultad.
+   La letra a mano aparece solo en los nombres de las tiritas. Siempre claro. */
+:root {
+  --ground: #f6f7f4;
+  --rule: #d5dfe8;
+  --paper: #ffffff;
+  --ink: #1b1e24;
+  --pen: #1f3a93;
+  --pen-dark: #172c70;
+  --g1: #f1f3f5;
+  --g2: #d6dbe0;
+  --g3: #8b93a0;
+  --g4: #4a5160;
+  /* Resaltadores suaves: el texto va siempre en tinta encima. */
+  --line-ing: #ffb3d4;
+  --line-exa: #a9dbff;
+  --line-inf: #bdeca4;
+  --line-eco: #ffd09a;
+  --line-sec: #fff27a;
+  --line-med: #ffc0a9;
+  --line-der: #ddd0ff;
+  --line-arq: #e8d9b0;
+  --line-nat: #a8ecd8;
+  --line-hum: #f6c6ef;
+  --line-otra: #e2e5ea;
+  --highlight: #fff27a;
+}
+
+@theme inline {
+  --color-ground: var(--ground);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-pen: var(--pen);
+  --color-pen-dark: var(--pen-dark);
+  --color-g1: var(--g1);
+  --color-g2: var(--g2);
+  --color-g3: var(--g3);
+  --color-g4: var(--g4);
+  --font-sans: var(--font-archivo);
+  --font-hand: var(--font-kalam);
+}
+
+html {
+  color-scheme: light;
+  scrollbar-color: var(--g3) var(--ground);
+}
+
+/* La hoja rayada: solo renglones horizontales, sin margen rojo. Es el material, no un adorno. */
+body {
+  background-color: var(--ground);
+  background-image: linear-gradient(transparent 27px, var(--rule) 27px, var(--rule) 28px);
+  background-size: 100% 28px;
+  color: var(--ink);
+  caret-color: var(--pen);
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--highlight);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--pen);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+/* Títulos, nombres y precios: Archivo 800, apretado. */
+@utility display {
+  font-family: var(--font-archivo);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+/* Letra a mano: solo para los nombres de las tiritas. */
+@utility hand {
+  font-family: var(--font-kalam);
+  font-weight: 400;
+}
+
+/* Hoja de papel blanco sobre el cuadriculado. */
+@utility paper {
+  background: var(--paper);
+  border-radius: 0;
+  box-shadow:
+    0 1px 2px rgb(27 30 36 / 0.12),
+    0 6px 14px -6px rgb(27 30 36 / 0.2);
+}
+
+/* Trazo de resaltador detrás del texto. */
+@utility highlight {
+  padding: 0 0.15em;
+  border-radius: 2px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@utility field {
+  @apply w-full rounded border-[1.5px] border-g3 bg-paper px-3 py-2.5 text-base text-ink outline-none placeholder:text-g4 focus:border-pen;
+}
+
+@utility field-select {
+  @apply field appearance-none pr-10;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231b1e24' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded px-4 py-2.5 text-[16px] font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+@utility btn-primary {
+  @apply btn bg-pen text-white hover:bg-pen-dark;
+}
+
+@utility btn-secondary {
+  @apply btn border-[1.5px] border-ink bg-paper text-ink hover:bg-g1;
+}
+
+/* Tirita: papel suelto colgando del aviso, con la línea troquelada arriba. */
+@utility tab {
+  background: var(--paper);
+  border-top: 2px dashed var(--g3);
+  border-radius: 0;
+  box-shadow: 0 3px 6px -3px rgb(27 30 36 / 0.25);
+}
+
+/* El único movimiento: al tocar la tirita, se inclina como si la arrancaras. */
+@media (prefers-reduced-motion: no-preference) {
+  .tear-tab {
+    transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: top center;
+  }
+  .tear-strip:hover .tear-tab:first-child,
+  .tear-strip:active .tear-tab:first-child,
+  .tear-strip:focus-visible .tear-tab:first-child {
+    transform: rotate(-3deg) translateY(4px);
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T16:28:05.553Z",
+  "title": "Design System: Tirita",
+  "extensions": {
+    "colorMeta": {
+      "pen": {
+        "role": "primary",
+        "displayName": "Ballpoint Blue",
+        "canonical": "oklch(38.7% 0.150 266.4)",
+        "tonalRamp": [
+          "oklch(15% 0.150 266.4)",
+          "oklch(26% 0.150 266.4)",
+          "oklch(38% 0.150 266.4)",
+          "oklch(50% 0.150 266.4)",
+          "oklch(62% 0.150 266.4)",
+          "oklch(74% 0.150 266.4)",
+          "oklch(85% 0.080 266.4)",
+          "oklch(95% 0.080 266.4)"
+        ]
+      },
+      "pen-dark": {
+        "role": "primary",
+        "displayName": "Pressed Ballpoint",
+        "canonical": "oklch(32.3% 0.121 266.4)",
+        "tonalRamp": [
+          "oklch(15% 0.121 266.4)",
+          "oklch(26% 0.121 266.4)",
+          "oklch(38% 0.121 266.4)",
+          "oklch(50% 0.121 266.4)",
+          "oklch(62% 0.121 266.4)",
+          "oklch(74% 0.121 266.4)",
+          "oklch(85% 0.080 266.4)",
+          "oklch(95% 0.080 266.4)"
+        ]
+      },
+      "line-ing": {
+        "role": "secondary",
+        "displayName": "Ingeniería Pink",
+        "canonical": "oklch(84.8% 0.097 351.7)",
+        "tonalRamp": [
+          "oklch(15% 0.097 351.7)",
+          "oklch(26% 0.097 351.7)",
+          "oklch(38% 0.097 351.7)",
+          "oklch(50% 0.097 351.7)",
+          "oklch(62% 0.097 351.7)",
+          "oklch(74% 0.097 351.7)",
+          "oklch(85% 0.080 351.7)",
+          "oklch(95% 0.080 351.7)"
+        ]
+      },
+      "line-exa": {
+        "role": "secondary",
+        "displayName": "Exactas Sky",
+        "canonical": "oklch(86.9% 0.072 239.9)",
+        "tonalRamp": [
+          "oklch(15% 0.072 239.9)",
+          "oklch(26% 0.072 239.9)",
+          "oklch(38% 0.072 239.9)",
+          "oklch(50% 0.072 239.9)",
+          "oklch(62% 0.072 239.9)",
+          "oklch(74% 0.072 239.9)",
+          "oklch(85% 0.072 239.9)",
+          "oklch(95% 0.072 239.9)"
+        ]
+      },
+      "line-inf": {
+        "role": "secondary",
+        "displayName": "Informática Lime",
+        "canonical": "oklch(89.3% 0.107 135.1)",
+        "tonalRamp": [
+          "oklch(15% 0.107 135.1)",
+          "oklch(26% 0.107 135.1)",
+          "oklch(38% 0.107 135.1)",
+          "oklch(50% 0.107 135.1)",
+          "oklch(62% 0.107 135.1)",
+          "oklch(74% 0.107 135.1)",
+          "oklch(85% 0.080 135.1)",
+          "oklch(95% 0.080 135.1)"
+        ]
+      },
+      "line-eco": {
+        "role": "secondary",
+        "displayName": "Económicas Apricot",
+        "canonical": "oklch(88.6% 0.087 70.2)",
+        "tonalRamp": [
+          "oklch(15% 0.087 70.2)",
+          "oklch(26% 0.087 70.2)",
+          "oklch(38% 0.087 70.2)",
+          "oklch(50% 0.087 70.2)",
+          "oklch(62% 0.087 70.2)",
+          "oklch(74% 0.087 70.2)",
+          "oklch(85% 0.080 70.2)",
+          "oklch(95% 0.080 70.2)"
+        ]
+      },
+      "line-sec": {
+        "role": "secondary",
+        "displayName": "Secundaria Yellow",
+        "canonical": "oklch(94.8% 0.142 103.1)",
+        "tonalRamp": [
+          "oklch(15% 0.142 103.1)",
+          "oklch(26% 0.142 103.1)",
+          "oklch(38% 0.142 103.1)",
+          "oklch(50% 0.142 103.1)",
+          "oklch(62% 0.142 103.1)",
+          "oklch(74% 0.142 103.1)",
+          "oklch(85% 0.080 103.1)",
+          "oklch(95% 0.080 103.1)"
+        ]
+      },
+      "line-otra": {
+        "role": "secondary",
+        "displayName": "Other-Faculty Lilac",
+        "canonical": "oklch(88.3% 0.065 297.7)",
+        "tonalRamp": [
+          "oklch(15% 0.065 297.7)",
+          "oklch(26% 0.065 297.7)",
+          "oklch(38% 0.065 297.7)",
+          "oklch(50% 0.065 297.7)",
+          "oklch(62% 0.065 297.7)",
+          "oklch(74% 0.065 297.7)",
+          "oklch(85% 0.065 297.7)",
+          "oklch(95% 0.065 297.7)"
+        ]
+      },
+      "highlight": {
+        "role": "secondary",
+        "displayName": "Highlighter Yellow",
+        "canonical": "oklch(94.8% 0.142 103.1)",
+        "tonalRamp": [
+          "oklch(15% 0.142 103.1)",
+          "oklch(26% 0.142 103.1)",
+          "oklch(38% 0.142 103.1)",
+          "oklch(50% 0.142 103.1)",
+          "oklch(62% 0.142 103.1)",
+          "oklch(74% 0.142 103.1)",
+          "oklch(85% 0.080 103.1)",
+          "oklch(95% 0.080 103.1)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Notebook Ground",
+        "canonical": "oklch(97.5% 0.004 121.6)",
+        "tonalRamp": [
+          "oklch(15% 0.004 121.6)",
+          "oklch(26% 0.004 121.6)",
+          "oklch(38% 0.004 121.6)",
+          "oklch(50% 0.004 121.6)",
+          "oklch(62% 0.004 121.6)",
+          "oklch(74% 0.004 121.6)",
+          "oklch(85% 0.004 121.6)",
+          "oklch(95% 0.004 121.6)"
+        ]
+      },
+      "grid": {
+        "role": "neutral",
+        "displayName": "Grid Line",
+        "canonical": "oklch(92.1% 0.011 243.7)",
+        "tonalRamp": [
+          "oklch(15% 0.011 243.7)",
+          "oklch(26% 0.011 243.7)",
+          "oklch(38% 0.011 243.7)",
+          "oklch(50% 0.011 243.7)",
+          "oklch(62% 0.011 243.7)",
+          "oklch(74% 0.011 243.7)",
+          "oklch(85% 0.011 243.7)",
+          "oklch(95% 0.011 243.7)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(100.0% 0.000 0.0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0.0)",
+          "oklch(26% 0.000 0.0)",
+          "oklch(38% 0.000 0.0)",
+          "oklch(50% 0.000 0.0)",
+          "oklch(62% 0.000 0.0)",
+          "oklch(74% 0.000 0.0)",
+          "oklch(85% 0.000 0.0)",
+          "oklch(95% 0.000 0.0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(23.5% 0.012 264.3)",
+        "tonalRamp": [
+          "oklch(15% 0.012 264.3)",
+          "oklch(26% 0.012 264.3)",
+          "oklch(38% 0.012 264.3)",
+          "oklch(50% 0.012 264.3)",
+          "oklch(62% 0.012 264.3)",
+          "oklch(74% 0.012 264.3)",
+          "oklch(85% 0.012 264.3)",
+          "oklch(95% 0.012 264.3)"
+        ]
+      },
+      "g1": {
+        "role": "neutral",
+        "displayName": "Smudge",
+        "canonical": "oklch(96.3% 0.003 247.9)",
+        "tonalRamp": [
+          "oklch(15% 0.003 247.9)",
+          "oklch(26% 0.003 247.9)",
+          "oklch(38% 0.003 247.9)",
+          "oklch(50% 0.003 247.9)",
+          "oklch(62% 0.003 247.9)",
+          "oklch(74% 0.003 247.9)",
+          "oklch(85% 0.003 247.9)",
+          "oklch(95% 0.003 247.9)"
+        ]
+      },
+      "g2": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "oklch(88.9% 0.009 247.9)",
+        "tonalRamp": [
+          "oklch(15% 0.009 247.9)",
+          "oklch(26% 0.009 247.9)",
+          "oklch(38% 0.009 247.9)",
+          "oklch(50% 0.009 247.9)",
+          "oklch(62% 0.009 247.9)",
+          "oklch(74% 0.009 247.9)",
+          "oklch(85% 0.009 247.9)",
+          "oklch(95% 0.009 247.9)"
+        ]
+      },
+      "g3": {
+        "role": "neutral",
+        "displayName": "Pencil",
+        "canonical": "oklch(66.1% 0.021 260.2)",
+        "tonalRamp": [
+          "oklch(15% 0.021 260.2)",
+          "oklch(26% 0.021 260.2)",
+          "oklch(38% 0.021 260.2)",
+          "oklch(50% 0.021 260.2)",
+          "oklch(62% 0.021 260.2)",
+          "oklch(74% 0.021 260.2)",
+          "oklch(85% 0.021 260.2)",
+          "oklch(95% 0.021 260.2)"
+        ]
+      },
+      "g4": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "oklch(43.4% 0.026 265.5)",
+        "tonalRamp": [
+          "oklch(15% 0.026 265.5)",
+          "oklch(26% 0.026 265.5)",
+          "oklch(38% 0.026 265.5)",
+          "oklch(50% 0.026 265.5)",
+          "oklch(62% 0.026 265.5)",
+          "oklch(74% 0.026 265.5)",
+          "oklch(85% 0.026 265.5)",
+          "oklch(95% 0.026 265.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page headings on the lined ground."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Board heading; profile name in the same voice."
+      },
+      "price-lg": {
+        "displayName": "Price, large",
+        "purpose": "Rate on the profile flyer."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings inside sheets, legends, admin."
+      },
+      "flyer-name": {
+        "displayName": "Flyer name / price",
+        "purpose": "Name and rate on flyer cards."
+      },
+      "subject-line": {
+        "displayName": "Subject line",
+        "purpose": "'Doy clases de' with highlighted subjects."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text; bios max 65ch."
+      },
+      "body-strong": {
+        "displayName": "Body strong",
+        "purpose": "Buttons, strip label, field labels."
+      },
+      "link": {
+        "displayName": "Link",
+        "purpose": "Subject index links, header link."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Modality, zone, ratings, hints."
+      },
+      "hand": {
+        "displayName": "Hand",
+        "purpose": "Tear-strip names only, written vertically."
+      }
+    },
+    "materials": [
+      {
+        "name": "lined-paper-ground",
+        "value": "background-color: #f6f7f4; background-image: linear-gradient(#d5dfe8 1px, transparent 1px), linear-gradient(90deg, #d5dfe8 1px, transparent 1px); background-size: 18px 18px",
+        "purpose": "Pinned material rule: the user explicitly chose lined notebook paper (variant A). Applies to body only; the detector's codex-grid-background (does not fire for ruled lines) advisory is an accepted, deliberate exception, not drift.",
+        "pinned": true
+      }
+    ],
+    "shadows": [
+      {
+        "name": "sheet",
+        "value": "0 1px 2px rgb(27 30 36 / 0.12), 0 6px 14px -6px rgb(27 30 36 / 0.2)",
+        "purpose": "Every white sheet resting on the lined ground."
+      },
+      {
+        "name": "tear-strip",
+        "value": "0 3px 6px -3px rgb(27 30 36 / 0.25)",
+        "purpose": "Strips hanging below a flyer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "tear-tilt",
+        "value": "transform 220ms cubic-bezier(0.16, 1, 0.3, 1); rotate(-3deg) translateY(4px), origin top center",
+        "purpose": "First tear strip on hover, press or focus of the strip row; the only movement. Skipped under prefers-reduced-motion."
+      },
+      {
+        "name": "color-transition",
+        "value": "150ms (Tailwind transition-colors)",
+        "purpose": "Button fills and flyer hover fill."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "container-max",
+        "value": "768px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The action colour: ballpoint-blue fill, white Archivo 600.",
+      "html": "<button class=\"ds-btn-primary\">Buscar profe</button>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:4px;padding:10px 16px;font-family:Archivo,system-ui,sans-serif;font-size:16px;font-weight:600;cursor:pointer;transition:background-color .15s,color .15s;background:var(--pen);color:#fff;border:none;}.ds-btn-primary:hover{background:var(--pen-dark);}.ds-btn-primary:focus-visible{outline:3px solid var(--pen);outline-offset:2px;border-radius:4px;}.ds-btn-primary:disabled{opacity:.5;cursor:not-allowed;}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Lesser actions: paper fill, 1.5px ink border.",
+      "html": "<button class=\"ds-btn-secondary\">Dejar una reseña</button>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:4px;padding:10px 16px;font-family:Archivo,system-ui,sans-serif;font-size:16px;font-weight:600;cursor:pointer;transition:background-color .15s,color .15s;background:var(--paper);color:var(--ink);border:1.5px solid var(--ink);}.ds-btn-secondary:hover{background:var(--g1);}.ds-btn-secondary:focus-visible{outline:3px solid var(--pen);outline-offset:2px;border-radius:4px;}"
+    },
+    {
+      "name": "Search Card",
+      "kind": "input",
+      "refersTo": "search-card",
+      "description": "White search card (6px corners) on the lined ground: pencil-bordered fields, blue button.",
+      "html": "<div class=\"ds-ground\"><form class=\"ds-search\"><select class=\"ds-field ds-select ds-full\"><option>Todas las materias</option></select><select class=\"ds-field ds-select\"><option>Nivel</option></select><select class=\"ds-field ds-select\"><option>Modalidad</option></select><button type=\"button\" class=\"ds-btn ds-full\">Buscar profe</button></form></div>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-ground{background-color:var(--ground);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:18px 18px;padding:16px;}.ds-search{background:var(--paper);border-radius:0;box-shadow:0 1px 2px rgb(27 30 36 / 0.12),0 6px 14px -6px rgb(27 30 36 / 0.2);border-radius:6px;padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px;}.ds-full{grid-column:1 / -1;}.ds-field{display:block;width:100%;box-sizing:border-box;border:1.5px solid var(--g3);border-radius:4px;background:var(--paper);padding:10px 12px;font-family:Archivo,system-ui,sans-serif;font-size:16px;line-height:1.5;color:var(--ink);outline:none;}.ds-field:focus{border-color:var(--pen);}.ds-field:focus-visible{outline:3px solid var(--pen);outline-offset:2px;}.ds-select{appearance:none;padding-right:40px;background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231b1e24' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:right 12px center;}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:4px;padding:10px 16px;font-family:Archivo,system-ui,sans-serif;font-size:16px;font-weight:600;cursor:pointer;transition:background-color .15s,color .15s;background:var(--pen);color:#fff;border:none;}.ds-btn:hover{background:var(--pen-dark);}.ds-btn:focus-visible{outline:3px solid var(--pen);outline-offset:2px;border-radius:4px;}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Full-width white strip with a g2 rule: Archivo 800 brand with 'Profes' highlighted, blue 'Soy profe'.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-hl\" style=\"background:var(--highlight)\">Profes</span> La Plata</a><a class=\"ds-navlink\" href=\"#\">Soy profe</a></header>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-header{background:var(--paper);border-bottom:1px solid var(--g2);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;}.ds-brand{font-family:Archivo,system-ui,sans-serif;font-weight:800;letter-spacing:-0.02em;line-height:1.08;font-size:1.25rem;color:var(--ink);text-decoration:none;}.ds-navlink{font-family:Archivo,system-ui,sans-serif;font-weight:600;font-size:15px;color:var(--pen);text-decoration:none;text-underline-offset:4px;}.ds-navlink:hover{text-decoration:underline;}.ds-brand:focus-visible,.ds-navlink:focus-visible{outline:3px solid var(--pen);outline-offset:2px;border-radius:4px;}.ds-hl{padding:0 0.15em;border-radius:2px;-webkit-box-decoration-break:clone;box-decoration-break:clone;color:var(--ink);}"
+    },
+    {
+      "name": "Faculty Highlight",
+      "kind": "chip",
+      "refersTo": "faculty-highlight",
+      "description": "The 'Doy clases de' line in Archivo 500, each subject swept with its faculty highlighter.",
+      "html": "<div class=\"ds-sheet\"><p class=\"ds-subjects\">Doy clases de <span class=\"ds-hl\" style=\"background:var(--line-ing)\">Matemática A</span>, <span class=\"ds-hl\" style=\"background:var(--line-exa)\">Física I</span> y <span class=\"ds-hl\" style=\"background:var(--line-sec)\">Química</span></p><p class=\"ds-codes\"><span class=\"ds-hl\" style=\"background:var(--line-ing)\">ING</span> <span class=\"ds-hl\" style=\"background:var(--line-inf)\">INF</span> <span class=\"ds-hl\" style=\"background:var(--line-eco)\">ECO</span></p></div>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-sheet{background:var(--paper);border-radius:0;box-shadow:0 1px 2px rgb(27 30 36 / 0.12),0 6px 14px -6px rgb(27 30 36 / 0.2);padding:16px;}.ds-subjects{font-family:Archivo,system-ui,sans-serif;font-weight:500;margin:0;font-size:1rem;line-height:1.625;color:var(--ink);}.ds-codes{font-family:Archivo,system-ui,sans-serif;font-weight:800;letter-spacing:-0.02em;line-height:1.08;margin:10px 0 0;font-size:1.125rem;}.ds-hl{padding:0 0.15em;border-radius:2px;-webkit-box-decoration-break:clone;box-decoration-break:clone;color:var(--ink);}"
+    },
+    {
+      "name": "Tear Strip",
+      "kind": "custom",
+      "refersTo": "tear-tab-contact",
+      "description": "Signature contact affordance: square paper strips under a flyer, names in Kalam; the first tilts as if torn.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-tear\" href=\"#\"><span class=\"ds-tab ds-tab-main\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3Z\"/></svg>WhatsApp</span><span class=\"ds-tab ds-tab-name\" aria-hidden=\"true\">Lucía</span><span class=\"ds-tab ds-tab-name\" aria-hidden=\"true\">Lucía</span></a></div>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-ground{background-color:var(--ground);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:18px 18px;padding:16px;}.ds-tear{display:flex;gap:3px;text-decoration:none;}.ds-tear:focus-visible{outline:3px solid var(--pen);outline-offset:2px;border-radius:4px;outline-offset:4px;}.ds-tab{background:var(--paper);border-top:2px dashed var(--g3);border-radius:0;box-shadow:0 3px 6px -3px rgb(27 30 36 / 0.25);min-height:64px;display:flex;align-items:center;justify-content:center;}.ds-tab-main{flex:3;gap:8px;padding:0 12px;white-space:nowrap;font-family:Archivo,system-ui,sans-serif;font-weight:600;color:var(--pen);}.ds-tab-name{width:44px;flex-shrink:0;font-family:Kalam,cursive;font-weight:400;font-size:15px;color:var(--g4);writing-mode:vertical-rl;}@media (prefers-reduced-motion:no-preference){.ds-tab-main{transition:transform 220ms cubic-bezier(.16,1,.3,1);transform-origin:top center;}.ds-tear:hover .ds-tab-main,.ds-tear:active .ds-tab-main,.ds-tear:focus-visible .ds-tab-main{transform:rotate(-3deg) translateY(4px);}}"
+    },
+    {
+      "name": "Flyer",
+      "kind": "card",
+      "refersTo": "flyer",
+      "description": "Teacher card as a square white flyer on the ruled sheet with fixed furniture, ending in the tear strip.",
+      "html": "<div class=\"ds-ground\"><article class=\"ds-flyer-wrap\"><a class=\"ds-flyer\" href=\"#\"><div class=\"ds-flyer-top\"><h3 class=\"ds-flyer-name\">Lucía Gómez</h3><span class=\"ds-flyer-price\">$15.000</span></div><p class=\"ds-meta\">Presencial y online · Tolosa</p><p class=\"ds-meta\"><span class=\"ds-stars\"><svg aria-hidden=\"true\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><path d=\"m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z\"/></svg><svg aria-hidden=\"true\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><path d=\"m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z\"/></svg><svg aria-hidden=\"true\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><path d=\"m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z\"/></svg><svg aria-hidden=\"true\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><path d=\"m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z\"/></svg><svg aria-hidden=\"true\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><path d=\"m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z\"/></svg></span> 4,5 (8)</p><p class=\"ds-subjects\">Doy clases de <span class=\"ds-hl\" style=\"background:var(--line-ing)\">Matemática A</span> y <span class=\"ds-hl\" style=\"background:var(--line-exa)\">Análisis I</span></p></a><a class=\"ds-tear\" href=\"#\"><span class=\"ds-tab ds-tab-main\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3Z\"/></svg>WhatsApp</span><span class=\"ds-tab ds-tab-name\" aria-hidden=\"true\">Lucía</span><span class=\"ds-tab ds-tab-name\" aria-hidden=\"true\">Lucía</span></a></article></div>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-ground{background-color:var(--ground);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:18px 18px;padding:16px;}.ds-flyer-wrap{display:flex;flex-direction:column;}.ds-flyer{background:var(--paper);border-radius:0;box-shadow:0 1px 2px rgb(27 30 36 / 0.12),0 6px 14px -6px rgb(27 30 36 / 0.2);display:block;padding:16px;color:var(--ink);text-decoration:none;font-family:Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;transition:background-color .15s;}.ds-flyer:hover{background:var(--g1);}.ds-flyer:focus-visible{outline:3px solid var(--pen);outline-offset:2px;border-radius:4px;}.ds-flyer-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;}.ds-flyer-name{font-family:Archivo,system-ui,sans-serif;font-weight:800;letter-spacing:-0.02em;line-height:1.08;margin:0;min-width:0;font-size:19px;overflow-wrap:anywhere;}.ds-flyer-price{font-family:Archivo,system-ui,sans-serif;font-weight:800;letter-spacing:-0.02em;line-height:1.08;flex-shrink:0;font-size:19px;}.ds-meta{margin:2px 0 0;font-size:14px;color:var(--g4);}.ds-stars{display:inline-flex;gap:2px;color:var(--ink);vertical-align:-2px;}.ds-subjects{font-weight:500;margin:10px 0 0;font-size:1rem;line-height:1.625;}.ds-hl{padding:0 0.15em;border-radius:2px;-webkit-box-decoration-break:clone;box-decoration-break:clone;color:var(--ink);}.ds-tear{display:flex;gap:3px;text-decoration:none;}.ds-tear:focus-visible{outline:3px solid var(--pen);outline-offset:2px;border-radius:4px;outline-offset:4px;}.ds-tab{background:var(--paper);border-top:2px dashed var(--g3);border-radius:0;box-shadow:0 3px 6px -3px rgb(27 30 36 / 0.25);min-height:64px;display:flex;align-items:center;justify-content:center;}.ds-tab-main{flex:3;gap:8px;padding:0 12px;white-space:nowrap;font-family:Archivo,system-ui,sans-serif;font-weight:600;color:var(--pen);}.ds-tab-name{width:44px;flex-shrink:0;font-family:Kalam,cursive;font-weight:400;font-size:15px;color:var(--g4);writing-mode:vertical-rl;}@media (prefers-reduced-motion:no-preference){.ds-tab-main{transition:transform 220ms cubic-bezier(.16,1,.3,1);transform-origin:top center;}.ds-tear:hover .ds-tab-main,.ds-tear:active .ds-tab-main,.ds-tear:focus-visible .ds-tab-main{transform:rotate(-3deg) translateY(4px);}}"
+    },
+    {
+      "name": "Board Heading",
+      "kind": "custom",
+      "refersTo": "board-heading",
+      "description": "Archivo 800 heading on the ruled sheet: 'Clases de <subject>' with the subject highlighted, count in g4.",
+      "html": "<div class=\"ds-ground\"><section aria-live=\"polite\"><h2 class=\"ds-board\">Clases de <span class=\"ds-hl\" style=\"background:var(--line-ing)\">Matemática A</span></h2><p class=\"ds-board-count\">Ingeniería · 4 avisos</p></section></div>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-ground{background-color:var(--ground);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:18px 18px;padding:16px;}.ds-board{font-family:Archivo,system-ui,sans-serif;font-weight:800;letter-spacing:-0.02em;line-height:1.08;margin:0;font-size:clamp(1.6rem,6.8vw,2.4rem);color:var(--ink);overflow-wrap:anywhere;text-wrap:balance;}.ds-board-count{margin:4px 0 0;font-family:Archivo,system-ui,sans-serif;font-weight:500;color:var(--g4);}.ds-hl{padding:0 0.15em;border-radius:2px;-webkit-box-decoration-break:clone;box-decoration-break:clone;color:var(--ink);}"
+    },
+    {
+      "name": "Form Error",
+      "kind": "custom",
+      "refersTo": "field",
+      "description": "Ink on smudge grey with an alert triangle; never a faculty colour.",
+      "html": "<p class=\"ds-error\" role=\"alert\"><svg aria-hidden=\"true\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3 2 20h20L12 3Z\"/><path d=\"M12 10v4M12 17.5v.01\"/></svg><span>Elegí al menos una materia.</span></p>",
+      "css": ":host,:root{--pen:#1f3a93;--pen-dark:#172c70;--line-ing:#ffb3d4;--line-exa:#a9dbff;--line-inf:#bdeca4;--line-eco:#ffd09a;--line-sec:#fff27a;--line-otra:#ddd0ff;--highlight:#fff27a;--ground:#f6f7f4;--grid:#d5dfe8;--paper:#ffffff;--ink:#1b1e24;--g1:#f1f3f5;--g2:#d6dbe0;--g3:#8b93a0;--g4:#4a5160;}.ds-error{display:flex;align-items:flex-start;gap:8px;margin:0;border:1.5px solid var(--ink);border-radius:4px;background:var(--g1);padding:8px 12px;font-family:Archivo,system-ui,sans-serif;font-weight:600;font-size:16px;line-height:1.5;color:var(--ink);}.ds-error svg{flex-shrink:0;margin-top:2px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Hoja rayada",
+    "overview": "Every teacher is their own \"Doy clases particulares\" flyer, cut square from plain white paper and laid on a sheet of lined school paper, and contacting them is tearing a strip off the bottom. The lined ground owns the page: the 18px grid of a notebook every La Plata student carries. On it, flyers, forms and panels are white sheets with square corners and a soft, neutral shadow.\n\nThe voice is firm and plain. Archivo 800 with tight tracking sets headings, names and prices like a confident hand-lettered notice translated into type; Archivo 400 to 600 does everything else. Ballpoint blue is the one colour that acts. Faculties are marked the way students mark notes: a soft highlighter stroke behind the subject, ink on top. Handwriting appears in exactly one place, where a hand would actually write: the teacher's first name on the spare tear-off strips.\n\nEvery flyer carries the same furniture in the same order (optional photo, name and price, modality and zone, rating, \"Doy clases de\" line), then the row of tear-off strips hanging below. The only motion is the first strip tilting as if being torn when you point at or press the strip row.",
+    "keyCharacteristics": [
+      "Squared notebook ground (28px ruled lines) under square-cornered white paper sheets with a soft neutral shadow.",
+      "Archivo throughout: 800 tight for headings, names and prices; 400 to 600 for reading.",
+      "Ballpoint blue is the single action colour.",
+      "Faculty identity is a soft highlighter stroke behind ink text.",
+      "Tear-off strips with a dashed perforation are the contact affordance; Kalam appears only on their names.",
+      "Light only; tabular numerals everywhere."
+    ],
+    "rules": [
+      {
+        "name": "The lined paper Rule",
+        "body": "The page ground is always the lined notebook sheet: ground colour with 1px horizontal ruled lines every 28px. This is the material the user chose, pinned deliberately, not decoration; do not remove it, recolour it, change its pitch or put it inside sheets. Sheets are always plain white over it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Highlighter Rule",
+        "body": "A faculty colour only ever appears as a highlighter stroke behind that faculty's subject name or code, with ink on top. It is never a fill for buttons, panels or borders, and never a text colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Pen Rule",
+        "body": "Ballpoint blue is the only action colour. If something is clickable and is not a flyer, it is blue; if it is blue, it is clickable or focused.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Hand Rule",
+        "body": "Kalam is used only for the names on tear strips. Headings, names on flyers, prices, subject lines, labels and body are always Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Numerals are tabular site-wide so prices and counts line up.",
+        "section": "typography"
+      },
+      {
+        "name": "The Fixed Furniture Rule",
+        "body": "Every flyer shows the same fields in the same order, with the price on the name's baseline at the right, at most three subjects plus \"y N más\", and missing data written out (\"A consultar\", \"Sin reseñas todavía\") rather than collapsed.",
+        "section": "layout"
+      },
+      {
+        "name": "The Paper-On-Lines Rule",
+        "body": "Shadows exist only because a sheet rests on the notebook. Never use a shadow for emphasis, hover lift or glow, and never inside a sheet.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the 28px ruled lines on the page ground, and put every readable or interactive surface on a plain white sheet over it.",
+      "Do set headings, flyer names and prices in Archivo 800 at -0.02em; everything else in Archivo 400 to 600.",
+      "Do mark faculties only with a soft highlighter stroke behind ink text.",
+      "Do use ballpoint blue for every action and link, and nothing else.",
+      "Do end every flyer with the tear strip, and keep flyer fields in the fixed order.",
+      "Do keep sheets, flyers, strips and photos square-cornered; round only controls (4px) and strokes (2px).",
+      "Do limit motion to the tear-strip tilt and colour transitions, and honour reduced motion."
+    ],
+    "donts": [
+      "Don't use handwriting anywhere except the names on tear strips.",
+      "Don't replace the lined ground with a texture, a tint, a photo or a plain fill, and don't draw ruled lines inside sheets.",
+      "Don't use cream or tinted paper; sheets are white.",
+      "Don't fill buttons, panels or borders with a faculty highlighter, or set text in one.",
+      "Don't add an initials placeholder when a teacher has no photo; let the name take the width.",
+      "Don't rotate or scatter flyers; they lie straight on the ruled sheet."
+    ]
+  }
+}

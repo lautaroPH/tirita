@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:390px;height:844px;overflow:hidden;background:#fafaf7;color:#141414;font-family:Barlow,system-ui,sans-serif}
+.bar{background:#f2c230;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid #141414}
+.brand{font-family:'Barlow Condensed';font-weight:800;font-size:24px;letter-spacing:.5px;text-transform:uppercase}
+.bar a{font-size:13px;font-weight:600;color:#141414}
+.search{padding:14px 16px;display:grid;gap:8px;border-bottom:1px solid #d9d9d4}
+.field{border:2px solid #141414;border-radius:6px;padding:11px 12px;font-size:15px;background:#fff;display:flex;justify-content:space-between}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.go{background:#141414;color:#f2c230;font-family:'Barlow Condensed';font-weight:800;font-size:20px;text-transform:uppercase;text-align:center;padding:10px;border-radius:6px}
+.board{margin:14px 16px 6px;background:#141414;color:#fafaf7;border-radius:8px;padding:12px 14px;border-left:10px solid #d1342b}
+.board small{font-family:'Barlow Condensed';font-weight:600;font-size:14px;color:#f2c230;text-transform:uppercase;letter-spacing:1px}
+.board h2{font-family:'Barlow Condensed';font-weight:800;font-size:34px;line-height:1;text-transform:uppercase;margin:2px 0}
+.board p{font-size:14px;opacity:.85}
+.card{margin:10px 16px;background:#fff;border:1px solid #d9d9d4;border-radius:8px;display:grid;grid-template-columns:6px 56px 1fr;gap:0 12px;padding:12px 12px 12px 0;overflow:hidden}
+.band{grid-row:1/4;margin:-12px 0}
+.ph{width:56px;height:56px;border-radius:6px;background:#e9e9e4;grid-row:1/3;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed';font-weight:800;font-size:22px}
+.top{display:flex;justify-content:space-between;align-items:baseline}
+.top b{font-size:17px}
+.price{font-family:'Barlow Condensed';font-weight:800;font-size:22px}
+.meta{font-size:13px;color:#5c5c58}
+.stops{grid-column:3;display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.stop{font-size:12px;font-weight:600;padding:3px 8px;border-radius:3px;color:#fff}
+</style></head><body>
+<div class="bar"><span class="brand">Profes La Plata</span><a>Soy profe</a></div>
+<div class="search">
+ <div class="field"><span>Matemática A – Ingeniería</span><span>▾</span></div>
+ <div class="row"><div class="field"><span>Universidad</span><span>▾</span></div><div class="field"><span>Cualquiera</span><span>▾</span></div></div>
+ <div class="go">Buscar profe</div>
+</div>
+<div class="board"><small>Ingeniería · 1er año</small><h2>Matemática A</h2><p>3 profes · gratis, les escribís directo</p></div>
+<div class="card"><div class="band" style="background:#d1342b"></div><div class="ph">AP</div>
+ <div><div class="top"><b>Ana Pérez</b><span class="price">$18.000</span></div><div class="meta">Presencial y online · Centro · ★ 5,0 (4)</div></div>
+ <div class="stops"><span class="stop" style="background:#d1342b">Matemática A</span><span class="stop" style="background:#1f5fbf">Análisis I</span></div></div>
+<div class="card"><div class="band" style="background:#d1342b"></div><div class="ph">LM</div>
+ <div><div class="top"><b>Lucas Medina</b><span class="price">$15.000</span></div><div class="meta">Online · ★ 4,8 (6)</div></div>
+ <div class="stops"><span class="stop" style="background:#d1342b">Matemática A</span><span class="stop" style="background:#d1342b">Física I</span></div></div>
+<div class="card"><div class="band" style="background:#d1342b"></div><div class="ph">SR</div>
+ <div><div class="top"><b>Sofía Ruiz</b><span class="price">$16.000</span></div><div class="meta">Presencial · Tolosa · sin reseñas</div></div>
+ <div class="stops"><span class="stop" style="background:#d1342b">Matemática A</span><span class="stop" style="background:#e8731a">Matemática (secu)</span></div></div>
+</body></html>
