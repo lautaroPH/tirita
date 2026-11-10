@@ -18,6 +18,30 @@ Next.js 16 (App Router) + Neon (Postgres + Neon Auth con Google).
 
 Límites contra spam en Postgres (`rate_events`): reseñas, altas, ediciones y pedidos de baja.
 
+## Desarrollo local (base en Docker)
+
+`npm run dev` usa una base Postgres local en Docker, así las pruebas no tocan los datos reales.
+La web publicada sigue usando Neon. El login con Google pasa igual por Neon Auth.
+
+1. Abrir Docker Desktop.
+2. Crear `.env.development.local` con
+   `DATABASE_URL=postgresql://tirita:tirita@localhost:55441/tirita`
+3. Levantar la base y cargarla (la primera vez):
+
+   ```bash
+   npm run db:local
+   ```
+
+   ```bash
+   npm run db:setup:local
+   ```
+
+   ```bash
+   npm run db:demo:local
+   ```
+
+4. `npm run dev`. Para apagar la base: `npm run db:local:stop`.
+
 ## Puesta en marcha
 
 1. `neon init` en esta carpeta y `neon deploy` (neon.ts ya tiene `auth: true`): eso escribe

@@ -7,6 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "db:local": "docker compose up -d --wait",
+    "db:local:stop": "docker compose stop",
+    "db:setup:local": "tsx --env-file=.env.development.local scripts/db.ts db/schema.sql db/seed.sql",
+    "db:demo:local": "tsx --env-file=.env.development.local scripts/db.ts db/demo.sql",
     "db:setup": "tsx --env-file=.env.local scripts/db.ts db/schema.sql db/seed.sql",
     "db:demo": "tsx --env-file=.env.local scripts/db.ts db/demo.sql"
   },
