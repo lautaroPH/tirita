@@ -57,6 +57,8 @@ neon neon-auth domain add https://tudominio.com.ar
 
 ## Deploy (Vercel)
 
+Paso a paso gratis en [DEPLOY.md](DEPLOY.md).
+
 Cargar las mismas variables de entorno (`DATABASE_URL`, `NEON_AUTH_BASE_URL`,
 `NEON_AUTH_COOKIE_SECRET`, `ADMIN_EMAILS`). Correr `npm run db:setup` una vez contra la base
 de producción. No correr `db:demo` en producción.
