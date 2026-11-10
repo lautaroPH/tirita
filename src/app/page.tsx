@@ -82,15 +82,27 @@ export default async function Home({ searchParams }: { searchParams: SearchParam
 
       {teachers.length === 0 ? (
         <div className="rounded border-2 border-dashed border-g3 px-4 py-6 text-center">
-          <p className="display text-xl">Todavía no hay avisos para esta búsqueda.</p>
-          <p className="mt-1 text-sm text-g4">
-            Probá con otra materia o modalidad.{" "}
-            {hasFilters && (
-              <Link href="/" className="font-semibold text-pen underline">
-                Ver todos los profes
-              </Link>
-            )}
-          </p>
+          {hasFilters ? (
+            <>
+              <p className="display text-xl">Todavía no hay avisos para esta búsqueda.</p>
+              <p className="mt-1 text-sm text-g4">
+                Probá con otra materia o modalidad.{" "}
+                <Link href="/" className="font-semibold text-pen underline">
+                  Ver todos los profes
+                </Link>
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="display text-xl">Estamos armando la cartelera.</p>
+              <p className="mt-1 text-sm text-g4">
+                Muy pronto vas a encontrar acá a los primeros profes.{" "}
+                <Link href="/sumate" className="font-semibold text-pen underline">
+                  ¿Das clases? Publicá tu aviso gratis
+                </Link>
+              </p>
+            </>
+          )}
         </div>
       ) : (
         <div className="grid gap-5 md:grid-cols-2">
