@@ -21,6 +21,8 @@ export type TeacherSummary = {
   modality: Modality;
   zone: string;
   social_url: string | null;
+  /** Profe de ejemplo (email @demo.invalid): se marca "Ejemplo" y no abre WhatsApp. */
+  demo: boolean;
   subjects: SubjectTag[];
   rating: number | null;
   review_count: number;
@@ -59,7 +61,7 @@ export async function searchTeachers(f: {
   modality: "presencial" | "online" | null;
 }): Promise<TeacherSummary[]> {
   const rows = await db()`
-    select t.id, t.name, t.photo_url, t.bio, t.rate_per_hour, t.modality, t.zone, t.social_url,
+    select t.id, t.name, t.photo_url, t.bio, t.rate_per_hour, t.modality, t.zone, t.social_url, (t.email like '%@demo.invalid') as demo,
       (select json_agg(json_build_object('name', s.name, 'area', s.area, 'level', s.level) order by s.sort)
          from teacher_subjects ts join subjects s on s.id = ts.subject_id
         where ts.teacher_id = t.id) as subjects,
@@ -83,7 +85,7 @@ export async function searchTeachers(f: {
 
 export async function getApprovedTeacher(id: string): Promise<TeacherSummary | null> {
   const rows = await db()`
-    select t.id, t.name, t.photo_url, t.bio, t.rate_per_hour, t.modality, t.zone, t.social_url,
+    select t.id, t.name, t.photo_url, t.bio, t.rate_per_hour, t.modality, t.zone, t.social_url, (t.email like '%@demo.invalid') as demo,
       (select json_agg(json_build_object('name', s.name, 'area', s.area, 'level', s.level) order by s.sort)
          from teacher_subjects ts join subjects s on s.id = ts.subject_id
         where ts.teacher_id = t.id) as subjects,
@@ -96,10 +98,13 @@ export async function getApprovedTeacher(id: string): Promise<TeacherSummary | n
   return rows[0] ? toSummary(rows[0]) : null;
 }
 
-export async function getTeacherWhatsapp(id: string): Promise<{ name: string; whatsapp: string } | null> {
+export async function getTeacherWhatsapp(
+  id: string,
+): Promise<{ name: string; whatsapp: string; demo: boolean } | null> {
   const rows = await db()`
-    select name, whatsapp from teachers where id = ${id}::uuid and status = 'approved' and not paused`;
-  return (rows[0] as { name: string; whatsapp: string } | undefined) ?? null;
+    select name, whatsapp, (email like '%@demo.invalid') as demo
+    from teachers where id = ${id}::uuid and status = 'approved' and not paused`;
+  return (rows[0] as { name: string; whatsapp: string; demo: boolean } | undefined) ?? null;
 }
 
 export async function listApprovedReviews(teacherId: string): Promise<Review[]> {
@@ -114,4 +119,17 @@ export async function getSubjectBySlug(slug: string): Promise<Subject | null> {
   const rows = await db()`
     select id, slug, name, level, area from subjects where slug = ${slug}`;
   return (rows[0] as Subject | undefined) ?? null;
+}
+
+/** ¿Hay profes de ejemplo publicados? Si los hay, la web muestra el aviso de "versión de muestra". */
+export async function hasPublishedDemos(): Promise<boolean> {
+  try {
+    const rows = await db()`
+      select exists (
+        select 1 from teachers where email like '%@demo.invalid' and status = 'approved' and not paused
+      ) as demo`;
+    return rows[0]?.demo === true;
+  } catch {
+    return false;
+  }
 }

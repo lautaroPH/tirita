@@ -26,6 +26,7 @@ export function TeacherCard({ t, subjectSlug }: { t: TeacherSummary; subjectSlug
               </span>
             </div>
             <p className="text-sm text-g4">
+              {t.demo && <span className="mr-1.5 rounded bg-g1 px-1.5 py-px text-xs font-semibold">Ejemplo</span>}
               {MODALITY_LABEL[t.modality]}
               {t.zone && ` · ${t.zone}`}
             </p>

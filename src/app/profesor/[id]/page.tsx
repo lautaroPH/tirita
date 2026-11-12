@@ -49,6 +49,11 @@ export default async function TeacherPage({ params, searchParams }: Props) {
           <Avatar name={t.name} src={t.photo_url} size={88} />
           <div className="min-w-0">
             <h1 className="display text-[clamp(1.9rem,8vw,2.6rem)] [overflow-wrap:anywhere]">{t.name}</h1>
+            {t.demo && (
+              <p className="mt-1 inline-block rounded bg-g1 px-2 py-0.5 text-sm font-semibold text-g4">
+                Perfil de ejemplo
+              </p>
+            )}
             <p className="mt-1 text-g4">
               {MODALITY_LABEL[t.modality]}
               {t.zone && ` · ${t.zone}`}
@@ -68,14 +73,19 @@ export default async function TeacherPage({ params, searchParams }: Props) {
             </p>
             {t.social_url && (
               <p className="mt-1 text-sm">
-                <a
-                  href={t.social_url}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  className="font-semibold text-pen underline decoration-pen/40 hover:decoration-pen"
-                >
-                  {socialLabel(t.social_url)}
-                </a>
+                {t.demo ? (
+                  // En los ejemplos el link no se abre: podría ser la cuenta de alguien real.
+                  <span className="font-semibold text-g4">{socialLabel(t.social_url)} (ejemplo)</span>
+                ) : (
+                  <a
+                    href={t.social_url}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="font-semibold text-pen underline decoration-pen/40 hover:decoration-pen"
+                  >
+                    {socialLabel(t.social_url)}
+                  </a>
+                )}
               </p>
             )}
           </div>

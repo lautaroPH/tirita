@@ -21,5 +21,15 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
 
   after(() => track("whatsapp_click", { teacherId: id, subjectId: subject?.id }));
 
+  // Profe de ejemplo: no abrimos ningún chat (el número no es de nadie);
+  // mostramos qué pasaría con un profe real.
+  if (teacher.demo) {
+    const demo = new URL("/contacto/ejemplo", req.nextUrl.origin);
+    demo.searchParams.set("nombre", first);
+    demo.searchParams.set("mensaje", text);
+    demo.searchParams.set("profe", id);
+    return Response.redirect(demo, 302);
+  }
+
   return Response.redirect(whatsappUrl(teacher.whatsapp, text), 302);
 }

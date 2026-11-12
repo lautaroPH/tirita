@@ -12,7 +12,9 @@
     "db:setup:local": "tsx --env-file=.env.development.local scripts/db.ts db/schema.sql db/seed.sql",
     "db:demo:local": "tsx --env-file=.env.development.local scripts/db.ts db/demo.sql",
     "db:setup": "tsx --env-file=.env.local scripts/db.ts db/schema.sql db/seed.sql",
-    "db:demo": "tsx --env-file=.env.local scripts/db.ts db/demo.sql"
+    "db:demo": "tsx --env-file=.env.local scripts/db.ts db/demo.sql",
+    "db:demo:remove": "tsx --env-file=.env.local scripts/db.ts db/demo-remove.sql",
+    "db:demo:remove:local": "tsx --env-file=.env.development.local scripts/db.ts db/demo-remove.sql"
   },
   "dependencies": {
     "@neon/auth": "^0.8.2",

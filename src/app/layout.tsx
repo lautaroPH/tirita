@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Archivo, Kalam } from "next/font/google";
+import { hasPublishedDemos } from "@/lib/queries";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 import "./globals.css";
 
@@ -23,12 +24,19 @@ export const metadata: Metadata = {
   applicationName: SITE_NAME,
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  // Mientras haya profes de ejemplo publicados, avisamos en todas las páginas.
+  const demo = await hasPublishedDemos();
   return (
     // suppressHydrationWarning: extensiones del navegador (p. ej. Scribe) agregan atributos
     // al <html> antes de que cargue React. Solo afecta los atributos de esta etiqueta.
     <html lang="es" suppressHydrationWarning>
       <body className={`${archivo.variable} ${kalam.variable} font-sans antialiased`}>
+        {demo && (
+          <div className="bg-[var(--highlight)] px-4 py-2 text-center text-sm font-medium text-ink">
+            <strong>Versión de muestra:</strong> los profes y las reseñas son de ejemplo. Muy pronto, los reales.
+          </div>
+        )}
         <header className="border-b border-g2 bg-paper">
           <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 px-4 py-3.5">
             <Link href="/" className="flex items-baseline gap-2" aria-label={`${SITE_NAME}, inicio`}>
