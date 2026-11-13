@@ -3,6 +3,8 @@
 Buscador gratuito de profes particulares en La Plata (secundaria y UNLP).
 Next.js 16 (App Router) + Neon (Postgres + Neon Auth con Google).
 
+**En vivo:** https://tirita.vercel.app
+
 ## Qué tiene
 
 - `/` buscador por materia (64 materias con nombres oficiales de la UNLP), nivel y modalidad

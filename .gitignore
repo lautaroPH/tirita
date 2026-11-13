@@ -45,3 +45,7 @@ next-env.d.ts
 .impeccable/review/
 .impeccable/questions/
 .impeccable/config.local.json
+
+# Local tooling (agents, design notes)
+.claude/
+.impeccable/
